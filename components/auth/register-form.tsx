@@ -8,13 +8,13 @@ import {useState , useTransition } from "react";
 import {useForm} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
 
-import { RegisterSchema} from "@/schemas"
-import {Input } from "@/components/ui/input";
-import {Button} from "@/components/ui/button";
+import { RegisterSchema} from "../../../server/schemas"
+import {Input } from "../../components/ui/input";
+import {Button} from "../../components/ui/button";
 
-import { FormError } from  "@/components/form-error";
+import { FormError } from  "../../components/form-error";
 
-import { FormSuccess } from  "@/components/form-success";
+import { FormSuccess } from  "../../components/form-success";
 
 import{
 Form,
@@ -24,10 +24,10 @@ FormItem,
 FormLabel,
 FormMessage
 
-} from "@/components/ui/form";
+} from "../../components/ui/form";
 
 import {CardWrapper} from  "../auth/card-wrapper";
-import { register } from "@/actions/register";
+import { register } from "../../../server//actions/register";
 
 
 

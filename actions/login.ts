@@ -1,9 +1,9 @@
 "use server";
 
 import * as z from "zod";
-import { LoginSchema } from "@/schemas";
-import { signIn } from "@/auth";
-import { DEFAULT_LOGIN_REDIRECT } from "@/routes";
+import { LoginSchema } from "../schemas";
+import { signIn } from "../auth";
+import { DEFAULT_LOGIN_REDIRECT } from "../routes";
 import { AuthError } from "next-auth";
 import { getUserByEmail } from "@/data/user"; // Import function to get user details
 import { getUserById } from "@/data/user"; // Import function to get user by ID
